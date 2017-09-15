@@ -1,0 +1,16 @@
+<h1>Home Page</h1>
+
+<p>
+    <a href="/#/add-video">Add a Video</a>
+</p>
+
+<ul>
+    <li ng-repeat='video in videos'>
+        <a href="/#/delete/{{video._id}}">
+            Delete!
+        </a>
+        <a href="/#/video/{{video._id}}">
+            {{video.title}}
+        </a>
+    </li>
+</ul>
